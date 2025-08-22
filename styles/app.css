@@ -484,10 +484,14 @@ body{
     color: #ffffff;
     text-align: left;
 }
-footer{
-    background-color: #1A1E26;
-    height: 500px;
+footer {
+  background: linear-gradient(to bottom, #111, #0a1915);
+  color: #bbb;
 }
+.footer{
+    margin-top: -100px;
+}
+
 @media only screen and (min-width: 860px) {
     .cart{
         order: 2;
@@ -671,7 +675,7 @@ footer{
         font-size: 20px;
     }
     .copoun input{
-        width: 70%;
+        width: 65%;
         padding: 24px 44px;
     }
     .copoun a{
