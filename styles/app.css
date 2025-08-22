@@ -149,6 +149,140 @@ body{
     border-radius: 100px;
     padding: 18.5px clamp(1.5rem, 5vw, 3rem);
 }
+.header-container{
+    padding: 64px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.header-item{
+    display: flex;
+    align-items:start;
+}
+.header-item-text{
+    padding-top: 20px;
+}
+.header-item h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 12px;
+}
+.header-item p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.first-sec{
+    background-color: #01100B;
+    color: #ffffff;
+    padding: 120px 24px 130px;
+}
+.first-sec h2{
+    text-align: center;
+    font-size: clamp(32px, 5vw, 64px);
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -4px;
+    margin-bottom: 40px;
+}
+.first-sec > p{
+    text-align: center;
+    color: #9D9EA2;
+    opacity: 40%;
+    font-size: 14px;
+    line-height: 150%;
+}
+.first-sec-container{
+    margin: 80px 0 110px;
+    display: flex;
+    gap: 24px;
+}
+.first-sec-item{
+    width: 50%;
+    text-align: center;
+    padding: 0 5px;
+}
+.first-sec-item h3{
+    margin: 20px 0;
+    font-size: 18px;
+}
+.first-sec-item p{
+    line-height: 150%;
+    color: #9D9EA2;
+}
+.first-sec-item div{
+    position: relative;
+}
+.first{
+    margin: 0 auto;
+}
+.second{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#ref{
+    padding: 16px 40px;
+    border-radius: 100px;
+    background-color: var(--buttumn-color);
+    color: #ffffff;
+    margin: 0 auto;
+}
+#choose{
+    display: none;
+    visibility: hidden;
+    padding: 20px 56px;
+    border-radius: 100px;
+    background-color: var(--buttumn-color);
+    color: #ffffff;
+    margin: 0 auto;
+}
+#but-group{
+    text-align: center;
+}
+.second-sec{
+    color: var(--text-color);
+    padding: 80px 24px 0;
+}
+.second-sec span{
+    color: #F2BC1B;
+}
+.second-sec h1, p{
+    text-align: left;
+}
+.second-sec h1{
+    font-size: clamp(32px, 5vw, 64px);
+    line-height: 120%;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+}
+.second-sec p{
+    font-size: 14px;
+    color: #717378;
+    line-height: 120%;
+}
+.second-sec > p{
+    line-height: 150%;
+}
+.second-sec-container{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+.second-sec-item{
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #CECFD566;
+}
+.second-sec-item h3{
+    margin: 16px 0;
+}
+
 @media only screen and (min-width: 860px) {
     .cart{
         order: 2;
@@ -167,23 +301,98 @@ body{
         padding: 16px 0;
         border-top: 1px solid #F4F4F4;
         display: flex;
+        flex-wrap: wrap;
+        gap: clamp(0px, 3vw, 50px);
         width: 87%;
-        justify-content: space-between;
+        justify-content: center;
         visibility: visible;
         margin: 0 auto;
     }
     .nav-menu li a{
         color: #46494F;
     }
-    .space{
-        width: 15px;
-        flex-shrink: 10;
-        flex-grow: 5;
-    }
     .bot-header img{
         src:"images/big.svg";
     }
     .bot-header-text h1{
         letter-spacing: -4px;
+    }
+    .header-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        padding:64px 48px;
+    }
+    .header-item{
+        width: 30%;
+    }
+    .header-item-text{
+        max-width: 300px;
+    }
+    .first{
+        width: 120px;
+        height: 120px;
+        position: relative;
+        left: 20px;
+    }
+    .second{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        top: -120px;
+        left: -180px;
+    }
+    .first-sec{
+        padding: 120px 10% 130px;
+    }
+    .first-sec h2{
+        margin-bottom: 64px;
+        padding: 0 5%;
+    }
+    .first-sec >p{
+        opacity: 100%;
+        padding: 0 10%;
+    }
+    .first-sec p{
+        font-size: 16px;
+    }
+    .first-sec-container{
+        margin-top: 120px;
+    }
+    .first-sec-item h3{
+        font-size: 24px;
+    }
+    #ref{
+        display: none;
+        visibility: hidden;
+    }
+    #choose{
+        display: inline;
+        visibility: visible;
+    }
+    .second-sec{
+        padding: 110px 95px 130px 140px;
+    }
+    .second-sec h1{
+        width: 75%;
+        margin-bottom: 24px;
+    }
+    .second-sec > p{
+        width: 75%;
+    }
+    .second-sec p{
+        font-size: 16px;
+    }
+    .second-sec-container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 64px;
+    }
+    .second-sec-item{
+        width: 30%;
+    }
+    .second-sec-item h3{
+        font-size: 24px;
+        letter-spacing: -0.5px;
     }
 }
