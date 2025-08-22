@@ -336,7 +336,10 @@ body{
     text-align: center;
     padding-bottom: 32px;
 }
-.recent-item > span, a{
+.recent-item > span{
+    display: block;
+}
+.recent-item > a{
     display: block;
 }
 .item-img{
@@ -430,6 +433,60 @@ body{
 .edu-item a{
     text-decoration: underline;
     color: var(--buttumn-color);
+}
+.copoun{
+    padding: 24px;
+    height: 360px;
+    width: 85%;
+    background-color: #05422C;
+    margin: 0 auto;
+    border-radius: 24px;
+    position: relative;
+    top: -180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.copoun h2{
+    line-height: 120%;
+    letter-spacing: -1.5px;
+    font-size: clamp(32px, 5vw, 64px);
+    color: #ffffff;
+}
+.copoun span{
+    color: #C3D2CC;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 16px 0;
+    padding-bottom: 8px;
+    display: block;
+    border-bottom: 1px solid #346654;
+}
+.copoun input{
+    padding: 16px 24px;
+    border: 1px solid #346654;
+    border-radius: 100px;
+    background-color: #05422C;
+    margin: 3px 0 16px;
+    display: block;
+    width: 100%;
+}
+.copoun input::placeholder{
+    color: #648A7C;
+    font-size: 16px;
+    font-weight: 400;
+}
+.copoun a{
+    display: block;
+    padding: 16px 44px;
+    border-radius: 100px;
+    background-color: var(--buttumn-color);
+    color: #ffffff;
+    text-align: left;
+}
+footer{
+    background-color: #1A1E26;
+    height: 500px;
 }
 @media only screen and (min-width: 860px) {
     .cart{
@@ -547,6 +604,9 @@ body{
         display: block;
         visibility: visible;
     }
+    .recent{
+        padding: 0 5vw;
+    }
     .recent div span{
         font-size: clamp(18px, 2vw, 24px);
     }
@@ -556,7 +616,7 @@ body{
     }
     .recent div{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     .recent div ul{
@@ -573,6 +633,9 @@ body{
         display: flex;
         gap: 1.5vw;
     }
+    .recent-item{
+        width: clamp(200px, 20vw, 300px);
+    }
     .wraper{
         gap: 1.5vw;
         width: 100%;
@@ -588,6 +651,31 @@ body{
         align-items: start;
     }
     .edu-item{
-        width: 30%;
+        width: 40%;
+    }
+    .copoun{
+        padding: 64px;
+        height: 440px;
+    }
+    .copoun h2{
+        width: 75%;
+        line-height: 110%;
+        letter-spacing: -4px;
+    }
+    .copoun div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .copoun span{
+        font-size: 20px;
+    }
+    .copoun input{
+        width: 70%;
+        padding: 24px 44px;
+    }
+    .copoun a{
+        display: inline;
+        padding: 24px 44px;
     }
 }
