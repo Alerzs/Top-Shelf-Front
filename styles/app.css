@@ -1,5 +1,10 @@
 @font-face {
     font-family: Lexend;
+    src: url(../fonts/Lexend-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: Lexend;
     src: url(../fonts/Lexend-Regular.ttf);
     font-weight: 400;
 }
@@ -282,7 +287,150 @@ body{
 .second-sec-item h3{
     margin: 16px 0;
 }
-
+.recent h1{
+    font-size: clamp(32px, 5vw, 64px);
+    color: var(--text-color);
+    letter-spacing: -1.5px;
+}
+.recent div span{
+    display: block;
+    margin: 24px 0;
+}
+.invs{
+    display: none;
+    visibility: hidden;
+}
+.recent{
+    padding: 0 12px;
+}
+.recent ul{
+    display:  flex;
+    justify-content: space-evenly;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #F4F4F4;
+}
+.recent ul li a{
+    color: var(--text-color);
+    padding: 9.5px clamp(5px, 4vw, 20px);
+    border: 1px solid #F4F4F4;
+    font-size: 14px;
+}
+.recent ul li a:hover{
+    background-color: #F2F6F4;
+    border: 1px solid #05422C;
+    border-radius: 100px;
+    color: #05422C;
+}
+.wraper{
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.recent-container{
+    padding: 0 12px;
+    margin-bottom: 70px;
+}
+.recent-item{
+    width: clamp(160px, 40vw, 235px);
+    text-align: center;
+    padding-bottom: 32px;
+}
+.recent-item > span, a{
+    display: block;
+}
+.item-img{
+    width: 100%;
+}
+.type{
+    color: #9D9EA2;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 24px 0 8px;
+}
+.rate{
+    margin: 8px 0 20px;
+}
+.weight{
+    margin: 20px 0;
+}
+.price{
+    color: #EB2606;
+}
+.gr{
+    color: #C8C9CB;
+    font-weight: 300;
+    margin-left: 7px;
+    font-size: 14px;
+}
+.off{
+    color: #9D9EA2;
+    text-decoration: line-through;
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.recent-item a{
+    padding: 9.5px 24px;
+    background-color: var(--buttumn-color);
+    border-radius: 100px;
+    color: #ffffff;
+    font-size: 14px;
+    width: 128px;
+    margin: 0 auto;
+}
+.educate{
+    background-color: #F4F4F4;
+    padding: 60px 20px 275px 25px;
+}
+.edu-item img{
+    width: 100%;
+}
+.title{
+    border-bottom: 1px solid #C8C9CB;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+}
+.title h2{
+    font-size: clamp(24px, 4vw, 32px);
+}
+.title a{
+    text-decoration: underline;
+    color: var(--buttumn-color);
+}
+.edu-container{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.edu-item{
+    max-width: 500px;
+}
+.edu-item span{
+    font-size: 14px;
+    color: #717378;
+    margin: 24px 0 8px;
+    display: block;
+    font-weight: 300;
+}
+.edu-item h3{
+    color: var(--text-color);
+    font-size: 24px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.edu-item p{
+    color: #717378;
+    line-height: 150%;
+    margin: 8px 0 32px;
+}
+.edu-item a{
+    text-decoration: underline;
+    color: var(--buttumn-color);
+}
 @media only screen and (min-width: 860px) {
     .cart{
         order: 2;
@@ -394,5 +542,52 @@ body{
     .second-sec-item h3{
         font-size: 24px;
         letter-spacing: -0.5px;
+    }
+    .invs{
+        display: block;
+        visibility: visible;
+    }
+    .recent div span{
+        font-size: clamp(18px, 2vw, 24px);
+    }
+    .recent div > a{
+        text-decoration: underline;
+        color: var(--buttumn-color);
+    }
+    .recent div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .recent div ul{
+        padding: 0;
+        gap: clamp(10px, 1vw, 40px);
+    }
+    .recent div ul li a{
+        font-size: 16px;
+    }
+    .recent div a, span{
+        display: inline;
+    }
+    .recent-container{
+        display: flex;
+        gap: 1.5vw;
+    }
+    .wraper{
+        gap: 1.5vw;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .educate{
+        padding: 120px 120px 320px;
+    }
+    .edu-container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .edu-item{
+        width: 30%;
     }
 }
